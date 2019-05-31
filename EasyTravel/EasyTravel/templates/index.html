@@ -1,0 +1,70 @@
+{% extends "base.html "%}
+{% block title %} Home {% endblock %}
+
+{% block container %}
+
+<div class="container main">
+        <div class="content col-lg-12 col-md-8">
+
+            <h2 class="section-title mb-2 h3">Ou suis-je ? que vais-je y faire ?</h2>
+            <h2 class="section-title mb-2 h5">Et oui, pas de questions a se poser, avec EasyTavel, payez et recevez votre ticket de bus en ligne en moins d'une minute, Voyager partout au Cameroun.</h2>
+              <form id="msform">
+                  <ul id="progressbar">
+                    <li class="active">Mon Trajet</li>
+                    <li>CHOISIR UNE AGENCE</li>
+                    <li>Mes infos personnelles</li>
+                    <li>Reserver et payer</li>
+                  </ul>
+                  <fieldset>
+                    <h2 class="fs-title"> Selectionnez votre Trajet</h2>
+                    <h3 class="fs-subtitle">Etape 1</h3>
+                    <input type="text" placeholder="Lieu de depart">
+                    <input type="text" placeholder="Ma destination">
+                    <input type="date" placeholder="Date de depart">
+                    <input type="button" name="next" class="next action-button" value="Suivant">
+                  </fieldset>
+                  <fieldset>
+                    <h2 class="fs-title"> Choisis une agence et la ville </h2>
+                    <h3 class="fs-subtitle">Etape 2</h3>
+                      <select name="agence" id="">
+                        <option value="">General Express</option>
+                        <option value="">Tresor voyage</option>
+                        <option value="">Buca voyage</option>
+                      </select>
+                      
+                      <select name="agence" id="">
+                        <option value="">General Bepanda</option>
+                        <option value="">Tresor Bonaberie</option>
+                        <option value="">Buca Akwa Douche</option>
+                      </select>
+                    
+                    <input type="button" name="previous" class="previous action-button" value="precedent">
+                    <input type="button" name="next" class="next action-button" value="Suivant">
+                  </fieldset>
+
+                  <fieldset>
+                    <h2 class="fs-title"> Mes infos </h2>
+                    <h3 class="fs-subtitle">Precisez vos infos personnelles</h3>
+                    <input type="text" placeholder="nom">
+                    <input type="text" placeholder="prenom">
+                    <input type="text" placeholder="Numero CNI">
+                    <input type="email" placeholder="Adresse E-mail">
+                    <input type="phone" placeholder="Telephone">
+                    <input type="button" name="previous" class="previous action-button" value="precedent">
+                    <input type="button" name="next" class="next action-button" value="Suivant">
+                  </fieldset>
+
+                  <fieldset>
+                    <h2 class="fs-title"> Finalisation </h2>
+                    <h3 class="fs-subtitle">Finaliser ma reservation</h3>
+                    <input type="text" placeholder="OrangeMoney">
+                    <input type="text" placeholder="MoMo">
+                    <input type="text" placeholder="Carte Visa">
+                    <input type="button" name="previous" class="previous action-button" value="precedent">
+                    <input type="button" name="submit" class="submit action-button" value="Reserver">
+                  </fieldset>
+              </form>
+              
+        </div>
+</div>
+{% endblock %}
